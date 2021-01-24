@@ -1,0 +1,120 @@
+*{
+
+    padding: 0;
+    margin: 0;
+}
+
+.menu{}
+.menu ul{
+    background: rgba(0, 0, 0 , .35);
+    text-align: center;
+}
+.menu ul li{
+    display: inline-block;
+    position: relative;
+ 
+
+}
+.menu ul li a {
+	padding: 15px 30px;
+    color: rgb(49, 49, 44);
+	text-decoration: none;
+	display: block;
+	font-size: 25px;
+}
+.menu ul li i {
+	font-size: 18px;
+	margin-left: 3px;
+	
+}
+.menu ul li:hover > a{
+    color: aquamarine;
+    background: rgb(0, 0, 0);
+
+}
+/* dropdown */
+.menu ul li ul{
+    position: absolute;
+ 
+    top: 100%;
+    left: 0;
+    background:none;
+    transition: all .4s ease-in;
+    visibility: hidden;
+    opacity:0 ;
+    text-align: left;
+    box-shadow: 2px 2px 3px rgba(12, 22, 78, 0.85);
+    transform-origin: top center;
+    transform: scaleY(0);
+}
+
+.menu ul li ul li{
+    border-left: 5px solid rgb(64, 45, 230);
+}
+.menu ul li ul li a{
+    width: 100px;
+
+}
+.menu ul li ul li i{
+    margin-left: 12px;
+}
+
+.menu ul li:hover > ul{
+    visibility: visible;
+    opacity: 1;
+    transition: all .4s ease-in;
+    transform-origin: top center;
+    transform: scaleY(1);
+
+}
+  
+.menu ul li ul li ul {
+	left: 161px;
+	top: 0;
+	/* transform: scaleX(1); */
+	transform-origin: left;
+	transition: all .4s ease-in;
+	
+}
+
+
+.menu ul li ul li:hover > ul a{
+
+    transform: scaleX(1);
+    transform-origin: right;
+    transition: all .4s ease-in;
+
+}
+
+
+/* social */
+.social{
+    margin: 100px auto;
+}
+
+.social ul{
+    text-align: center;
+}
+.social ul li{
+    display: inline-block;
+
+
+}
+.social ul li a{
+    display: block;
+    text-decoration: none;
+    height: 50px;
+    width: 50px;
+    line-height: 50px;
+    font-size: 32px;
+    background: blue;
+    border-radius: 50%;
+    margin: 33px 15px;
+    color: #000;
+    transition: all .5s ease-in-out;
+
+}
+.social ul li a:hover{
+    background: rgb(218, 143, 143);
+    transition: all .5s ease-in-out;
+}
